@@ -1,0 +1,177 @@
+
+body{
+    background: linear-gradient(to bottom right, #105b9d, #00f2fe);
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #9a9aa6, #000000);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    
+    
+}
+
+#rules {
+    text-align: center;
+    margin: 18px auto;
+    max-width: 500px;
+}
+
+#rules ol{
+    list-style-position: inside;
+    padding:0;
+}
+
+#quote {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#message {
+    margin-top: 18px;
+    font-size: 1.5rem;
+    color: #cce7ff;
+}
+
+.error {
+  border: 2px solid red;
+  background-color: #ffe6e6;
+  animation: shake 0.5s;
+  animation-iteration-count: 3;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border: 2px solid #115bab;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 1.11rem;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #00c4ff;
+}
+
+/* styling the buttons */
+button {
+    background-color: #1b75d5;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 12px 25px;
+    margin: 15px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #5987b8;
+    transform: translateY(-3px);
+}
+
+button:active {
+    background-color: #5496d8;
+}
+
+
+/* styling the timer*/
+#timer {
+    font-size: 1.3rem;
+    color: #68d7e3;
+    margin-top: 20px;
+}
+
+.highlight {
+    background-color: #1de4ef;
+    color: #003f7f;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+/* adding image and allowing the title appear over it */
+.image-container {
+    position: relative;  
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto;  
+  }
+
+  #fingerprint-image {
+    width: 45%;  
+    height: auto; 
+    border-radius: 10px;
+    opacity: 60%;
+  }
+  
+  /* placing title over the image */
+  .game-title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    color: white;
+    font-size: 2.5rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .game-title:hover{
+    color:#c1b8b8;
+  }
+
+/* Defining the shake animation */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  75% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* adding the moving gradient */
+
+/* Define the gradient movement animation */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}

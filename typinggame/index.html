@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <div class="image-container">
+        <img src="images/fingerprint.png" alt="Fingerprint and magnifying glass" id="fingerprint-image" />
+        <h1 class="game-title">The Typing Detective</h1>
+      </div>
+
+    <h2> How fast can you type? Lets find out!</h2>
+    <p>
+      This game allows you to practice your typing skills with a quote from Sherlock Holmes. <br>
+      Click "START" to begin!
+    </p>
+
+    <button type="button" id="toggle-rules">Show Rules</button>
+
+    <!-- setting the rules -->
+    <div id="rules" style="display: none;"> 
+
+        <h3>Rules:</h3>
+        <ol>
+            <li>Type each word as it appears in the highlighted section.</li>
+            <li>Press the spacebar after each word to submit it. </li>
+            <li>Pay attention to punctuation—every comma, full-stop, and character counts!</li>
+            <li>Match the case exactly (uppercase and lowercase).</li> 
+            <li>The timer starts as soon as you hit "START"—type as fast and accurately as you can!</li>
+        </ol>
+    </div>
+    
+    <div id="particles-js"></div>
+
+     <!-- This will display the text above -->
+    <p id="quote"></p>
+    <p id="message"></p>
+    
+        <input type="text" aria-label="current word" id="typed-value"/>
+        <br>
+        <button type="button" id="start">START</button>
+        <button type="button" id="restart" style="display: none;">RESTART</button>
+
+    <p id="timer"></p>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
