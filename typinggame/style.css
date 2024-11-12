@@ -175,3 +175,15 @@ button:active {
     height: 100%;
     z-index: -1; 
 }
+
+#credit {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  position: relative;
+  bottom: -22px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
